@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   title: "Justin Rosales — CS Student & Developer",
   description:
     "Personal portfolio of Justin Rosales, a Computer Science student at the University of Michigan building full-stack web apps, machine learning systems, and research software.",
+  icons: [
+    { rel: "icon", url: "/icon.svg", type: "image/svg+xml" },
+    { rel: "icon", url: "/icon.jpg" },
+  ],
   openGraph: {
     title: "Justin Rosales — CS Student & Developer",
     description:

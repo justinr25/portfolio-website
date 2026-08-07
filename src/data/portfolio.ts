@@ -10,7 +10,8 @@ export const profile: Profile = {
     title: "CS Student & Developer",
     university: "University of Michigan — Ann Arbor",
     degree: "BSE Computer Science (College of Engineering)",
-    bio: "I'm a CS student at the University of Michigan building full-stack web apps, machine learning systems, and research software. I like working on things that solve real problems — whether that's a clinical screening tool for nurses or a reinforcement learning trading bot. Always learning, always shipping.",
+    // bio: "I'm a CS student at the University of Michigan building full-stack web apps, machine learning systems, and research software. I like working on things that solve real problems — whether that's a clinical screening tool for nurses or a reinforcement learning trading bot. Always learning, always shipping.",
+    bio: "",
     email: "justin06.rosales@gmail.com",
     socials: [
         {
@@ -28,19 +29,6 @@ export const profile: Profile = {
 
 export const experiences: Experience[] = [
     {
-        id: "umich-research-assistant",
-        role: "Undergraduate Research Assistant",
-        organization:
-            "University of Michigan — Civil & Environmental Engineering",
-        dateRange: "Jun 2026 – Present",
-        location: "Ann Arbor, MI",
-        bullets: [
-            // "Architected the migration of monolithic research Jupyter Notebooks into modular, production-grade Python software pipelines for aerosol mass spectrometry analysis, eliminating 100% of codebase redundancy.",
-            // "Engineered a responsive desktop GUI application using CustomTkinter and embedded interactive Matplotlib canvases, reducing researchers' analytical workflow time by over 80%.",
-            // "Developed automated batch-processing data pipelines to sequentially analyze multi-file atmospheric chemistry datasets, scaling analytical throughput to generating 100+ publication-quality plots in seconds.",
-        ],
-    },
-    {
         id: "nurse-friend-dev",
         role: "Student Software Developer",
         organization: "University of Michigan School of Nursing",
@@ -52,6 +40,19 @@ export const experiences: Experience[] = [
             // "Created an interactive clinical results dashboard featuring a visual mindfulness breathing guide with smooth 60 FPS animation loops using the React Native Animated API.",
         ],
     },
+    {
+        id: "umich-research-assistant",
+        role: "Undergraduate Research Assistant",
+        organization:
+            "University of Michigan — Civil & Environmental Engineering",
+        dateRange: "May 2026 – Present",
+        location: "Ann Arbor, MI",
+        bullets: [
+            // "Architected the migration of monolithic research Jupyter Notebooks into modular, production-grade Python software pipelines for aerosol mass spectrometry analysis, eliminating 100% of codebase redundancy.",
+            // "Engineered a responsive desktop GUI application using CustomTkinter and embedded interactive Matplotlib canvases, reducing researchers' analytical workflow time by over 80%.",
+            // "Developed automated batch-processing data pipelines to sequentially analyze multi-file atmospheric chemistry datasets, scaling analytical throughput to generating 100+ publication-quality plots in seconds.",
+        ],
+    },
 ];
 
 export const projects: Project[] = [
@@ -59,8 +60,14 @@ export const projects: Project[] = [
         id: "releet",
         name: "ReLeet",
         description:
-            "A web application for LeetCode practice using spaced repetition algorithms (SM-2 / Leitner) to dynamically schedule problem reviews, track algorithmic mastery, and optimize technical interview prep.",
-        techStack: ["React", "TypeScript", "Tailwind CSS"],
+            "A universal web and mobile app for technical interview prep using pattern-based spaced repetition. Integrates Gemini AI to grade dictated problem-solving competency and SM-2 math scheduling to serve unseen LeetCode problems by algorithmic pattern.",
+        techStack: [
+            "React Native",
+            "Expo",
+            "TypeScript",
+            "Supabase",
+            "Gemini API",
+        ],
         links: {},
     },
     {
@@ -71,24 +78,6 @@ export const projects: Project[] = [
         techStack: ["Python", "Flask", "Auth0", "OpenCV", "PyTorch", "SQLite"],
         links: {
             devpost: "https://devpost.com/software/splitr-vbt924",
-        },
-    },
-    {
-        id: "scratchpad",
-        name: "Scratchpad",
-        description:
-            "A full-stack notes web application built on the MERN stack featuring client-side SPA routing, dynamic per-IP rate limiting via Upstash Redis, and a modern responsive UI styled with Tailwind CSS v4 and DaisyUI v5.",
-        techStack: [
-            "React 19",
-            "Express 5",
-            "MongoDB",
-            "Redis",
-            "Tailwind CSS",
-            "DaisyUI",
-        ],
-        links: {
-            github: "https://github.com/justinr25/scratchpad",
-            live: "https://scratchpad-ur89.onrender.com/",
         },
     },
     {
@@ -106,6 +95,24 @@ export const projects: Project[] = [
         links: {
             github: "https://github.com/justinr25/arithmetic-battle",
             live: "https://arithmetic-battle.vercel.app/",
+        },
+    },
+    {
+        id: "scratchpad",
+        name: "Scratchpad",
+        description:
+            "A full-stack notes web application built on the MERN stack featuring client-side SPA routing, dynamic per-IP rate limiting via Upstash Redis, and a modern responsive UI styled with Tailwind CSS v4 and DaisyUI v5.",
+        techStack: [
+            "React",
+            "Express",
+            "MongoDB",
+            "Redis",
+            "Tailwind CSS",
+            "DaisyUI",
+        ],
+        links: {
+            github: "https://github.com/justinr25/scratchpad",
+            live: "https://scratchpad-ur89.onrender.com/",
         },
     },
 ];

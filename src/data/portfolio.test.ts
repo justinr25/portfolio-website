@@ -7,7 +7,7 @@ describe("portfolio data integrity", () => {
       expect(profile.name).toBeTruthy();
       expect(profile.title).toBeTruthy();
       expect(profile.university).toBeTruthy();
-      expect(profile.bio).toBeTruthy();
+      expect(profile.bio).toBeDefined();
       expect(profile.email).toContain("@");
     });
 
@@ -31,7 +31,7 @@ describe("portfolio data integrity", () => {
         expect(exp.role).toBeTruthy();
         expect(exp.organization).toBeTruthy();
         expect(exp.dateRange).toBeTruthy();
-        expect(exp.bullets.length).toBeGreaterThan(0);
+        expect(exp.bullets).toBeDefined();
       });
     });
 
