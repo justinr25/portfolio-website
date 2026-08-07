@@ -1,6 +1,6 @@
 # Justin Rosales — Portfolio Website
 
-A minimal, single-page developer portfolio built with **Next.js 16 (App Router + TypeScript)**, styled with the **Catppuccin Mocha** color palette, and configured for **Static Export** (`output: 'export'`).
+A minimal, single-page developer portfolio built with **Next.js 16 (App Router + TypeScript)**, styled with the **Catppuccin Mocha** color palette, configured for **Static Export** (`output: 'export'`), and deployed with **Vercel**.
 
 ## Quick Start
 
@@ -21,7 +21,7 @@ npm run check
 - **Styling:** Tailwind CSS v4 & custom Catppuccin Mocha design system (`src/app/globals.css`)
 - **Icons:** Lucide Icons & Custom SVG Brand Icons (`src/components/icons/BrandIcons.tsx`)
 - **Testing:** Vitest + React Testing Library + jsdom
-- **Deployment:** Static Export (Pure HTML/CSS/JS output)
+- **Deployment:** Deployed with Vercel (Static Export)
 
 ## Repository Structure
 
