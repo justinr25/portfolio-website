@@ -69,11 +69,18 @@ export const projects: Project[] = [
         id: "splitr",
         name: "Splitr",
         description:
-            "A secure web application integrating real-time facial recognition using OpenCV, PyTorch, and FaceNet with Auth0 OAuth 2.0 authentication. Won 1st Place for 'Best Use of Auth0' at MHacks 2025.",
-        techStack: ["Python", "Flask", "Auth0", "OpenCV", "PyTorch", "SQLite"],
+            "A secure expense-splitting web app featuring 100% client-side real-time facial recognition via TensorFlow.js to dynamically track user presence and allocate utility costs, integrated with Auth0 authentication. Won 1st Place for 'Best Use of Auth0' at MHacks 2025.",
+        techStack: [
+            "Python",
+            "Flask",
+            "Auth0",
+            "Tailwind CSS",
+            "TensorFlow.js",
+            "face-api.js",
+        ],
         links: {
             devpost: "https://devpost.com/software/splitr-vbt924",
-            github: "https://github.com/justinr25/Splitr",
+            github: "https://github.com/justinr25/splitr",
         },
     },
     {
@@ -81,13 +88,7 @@ export const projects: Project[] = [
         name: "Arithmetic Battle",
         description:
             "A real-time competitive mental math duel game where players race head-to-head solving arithmetic problems within a 120-second time limit using deterministic seeded problem generation for fairness.",
-        techStack: [
-            "React",
-            "TypeScript",
-            "Tailwind CSS",
-            "Firebase",
-            "Vercel",
-        ],
+        techStack: ["React", "TypeScript", "Tailwind CSS", "Firebase"],
         links: {
             github: "https://github.com/justinr25/arithmetic-battle",
             live: "https://arithmetic-battle.vercel.app/",
@@ -125,6 +126,7 @@ export const skillGroups: SkillGroup[] = [
             "React Native",
             "Tailwind CSS",
             "DaisyUI",
+            "TensorFlow.js",
             "PyTorch",
             "OpenCV",
             "NumPy",
