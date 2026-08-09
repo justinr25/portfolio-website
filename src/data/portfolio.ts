@@ -3,6 +3,7 @@ import type {
     Experience,
     Project,
     SkillGroup,
+    Education,
 } from "@/types/portfolio";
 
 export const profile: Profile = {
@@ -21,7 +22,7 @@ export const profile: Profile = {
         },
         {
             label: "LinkedIn",
-            url: "https://linkedin.com/in/justinrosales",
+            url: "https://linkedin.com/in/justin-rosales",
             icon: "linkedin",
         },
     ],
@@ -61,13 +62,7 @@ export const projects: Project[] = [
         name: "ReLeet",
         description:
             "A universal web and mobile app for technical interview prep using pattern-based spaced repetition. Integrates Gemini AI to grade dictated problem-solving competency and SM-2 math scheduling to serve unseen LeetCode problems by algorithmic pattern.",
-        techStack: [
-            "React Native",
-            "Expo",
-            "TypeScript",
-            "Supabase",
-            "Gemini API",
-        ],
+        techStack: ["React Native", "Expo", "TypeScript", "Supabase", "Gemini"],
         links: {},
     },
     {
@@ -78,6 +73,7 @@ export const projects: Project[] = [
         techStack: ["Python", "Flask", "Auth0", "OpenCV", "PyTorch", "SQLite"],
         links: {
             devpost: "https://devpost.com/software/splitr-vbt924",
+            github: "https://github.com/justinr25/Splitr",
         },
     },
     {
@@ -86,7 +82,7 @@ export const projects: Project[] = [
         description:
             "A real-time competitive mental math duel game where players race head-to-head solving arithmetic problems within a 120-second time limit using deterministic seeded problem generation for fairness.",
         techStack: [
-            "React 19",
+            "React",
             "TypeScript",
             "Tailwind CSS",
             "Firebase",
@@ -159,5 +155,29 @@ export const skillGroups: SkillGroup[] = [
             "Postman",
             "ROS",
         ],
+    },
+];
+
+export const education: Education[] = [
+    {
+        id: "umich",
+        school: "University of Michigan",
+        degree: "BSE Computer Science",
+        dateRange: "Aug 2025 - May 2029",
+        location: "Ann Arbor, MI",
+        coursework: [
+            "EECS 281: Data Structures and Algorithms",
+            "EECS 370: Computer Organization",
+            "EECS 280: Programming and Data Structures",
+            "EECS 203: Discrete Mathematics",
+        ],
+    },
+    {
+        id: "kamsc",
+        school: "Kalamazoo Area Mathematics and Science Center",
+        degree: "High School Diploma",
+        dateRange: "Aug 2021 - May 2025",
+        location: "Kalamazoo, MI",
+        coursework: ["AP CSA", "AP CSP", "AP Physics C", "AP Calculus BC"],
     },
 ];

@@ -39,3 +39,12 @@ export interface SkillGroup {
   category: string;
   skills: string[];
 }
+
+export interface Education {
+  id: string;
+  school: string;
+  degree?: string;
+  dateRange: string;
+  location: string;
+  coursework: string[];
+}
