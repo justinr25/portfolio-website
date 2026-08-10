@@ -112,6 +112,16 @@ export const projects: Project[] = [
             live: "https://scratchpad-ur89.onrender.com/",
         },
     },
+    {
+        id: "flappy-bird-ai",
+        name: "Flappy Bird AI",
+        description:
+            "A neuroevolution simulation in Python evolving feedforward neural networks via the NEAT algorithm to play Flappy Bird autonomously, surpassing human-level consistency within 10 generations of 50 agents.",
+        techStack: ["Python", "Pygame", "NEAT", "NumPy", "Matplotlib"],
+        links: {
+            github: "https://github.com/justinr25/flappy-bird-ai",
+        },
+    },
 ];
 
 export const skillGroups: SkillGroup[] = [
