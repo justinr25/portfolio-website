@@ -4,16 +4,25 @@ import { Hero } from "@/components/sections/Hero";
 import { Experience } from "@/components/sections/Experience";
 import { Projects } from "@/components/sections/Projects";
 import { Education } from "@/components/sections/Education";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <main className="mx-auto max-w-4xl px-6 pt-20">
-        <Hero />
-        <Experience />
-        <Projects />
-        <Education />
+        <ScrollReveal>
+          <Hero />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Experience />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Projects />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Education />
+        </ScrollReveal>
       </main>
       <Footer />
     </>
