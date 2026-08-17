@@ -43,7 +43,7 @@ export const experiences: Experience[] = [
     },
     {
         id: "umich-research-assistant",
-        role: "Undergraduate Research Assistant",
+        role: "Research Assistant",
         organization:
             "University of Michigan — Civil & Environmental Engineering",
         dateRange: "May 2026 – Present",
@@ -63,6 +63,7 @@ export const projects: Project[] = [
         description:
             "A universal web and mobile app for technical interview prep using pattern-based spaced repetition. Integrates Gemini AI to grade dictated problem-solving competency and SM-2 math scheduling to serve unseen LeetCode problems by algorithmic pattern.",
         techStack: ["React Native", "Expo", "TypeScript", "Supabase", "Gemini"],
+        featured: true,
         links: {},
     },
     {
@@ -78,6 +79,7 @@ export const projects: Project[] = [
             "TensorFlow.js",
             "face-api.js",
         ],
+        featured: true,
         links: {
             devpost: "https://devpost.com/software/splitr-vbt924",
             github: "https://github.com/justinr25/splitr",
@@ -89,9 +91,21 @@ export const projects: Project[] = [
         description:
             "A real-time competitive mental math duel game where players race head-to-head solving arithmetic problems within a 120-second time limit using deterministic seeded problem generation for fairness.",
         techStack: ["React", "TypeScript", "Tailwind CSS", "Firebase"],
+        featured: true,
         links: {
             github: "https://github.com/justinr25/arithmetic-battle",
             live: "https://arithmetic-battle.vercel.app/",
+        },
+    },
+    {
+        id: "flappy-bird-ai",
+        name: "Flappy Bird AI",
+        description:
+            "A neuroevolution simulation in Python evolving feedforward neural networks via the NEAT algorithm to play Flappy Bird autonomously, surpassing human-level consistency within 10 generations of 50 agents.",
+        techStack: ["Python", "Pygame", "NEAT", "NumPy", "Matplotlib"],
+        featured: true,
+        links: {
+            github: "https://github.com/justinr25/flappy-bird-ai",
         },
     },
     {
@@ -107,19 +121,80 @@ export const projects: Project[] = [
             "Tailwind CSS",
             "DaisyUI",
         ],
+        featured: false,
         links: {
             github: "https://github.com/justinr25/scratchpad",
             live: "https://scratchpad-ur89.onrender.com/",
         },
     },
     {
-        id: "flappy-bird-ai",
-        name: "Flappy Bird AI",
+        id: "web-image-scraper",
+        name: "Web Image Scraper",
         description:
-            "A neuroevolution simulation in Python evolving feedforward neural networks via the NEAT algorithm to play Flappy Bird autonomously, surpassing human-level consistency within 10 generations of 50 agents.",
-        techStack: ["Python", "Pygame", "NEAT", "NumPy", "Matplotlib"],
+            "A lightweight, full-stack web application that autonomously scrapes, extracts lazy-loaded image assets from user-provided URLs, and manages media downloads with SQLite and a Bootstrap interface.",
+        techStack: ["Python", "Flask", "SQLite", "HTML", "Bootstrap"],
+        featured: false,
         links: {
-            github: "https://github.com/justinr25/flappy-bird-ai",
+            github: "https://github.com/justinr25/web-image-scraper",
+        },
+    },
+    {
+        id: "sudoku-solver",
+        name: "Sudoku Solver",
+        description:
+            "A responsive web-based puzzle solver and generator featuring a step-by-step backtracking visualizer that animates algorithmic decision-making and solution discovery in real time.",
+        techStack: ["HTML", "CSS", "JavaScript"],
+        featured: false,
+        links: {
+            github: "https://github.com/justinr25/sudoku-solver",
+            live: "https://justinr25.github.io/sudoku-solver/",
+        },
+    },
+    {
+        id: "pokemon-battle-simulator",
+        name: "Pokémon Battle Simulator",
+        description:
+            "A turn-based battle simulator that fetches live combat stats and move pools from the PokéAPI with animated combat transitions and dynamic health bars via GSAP.",
+        techStack: ["HTML", "CSS", "JavaScript"],
+        featured: false,
+        links: {
+            github: "https://github.com/justinr25/pokemon-battle-simulator",
+            live: "https://justinr25.github.io/pokemon-battle-simulator/",
+        },
+    },
+    {
+        id: "flappy-circle",
+        name: "Flappy Circle",
+        description:
+            "A responsive 2D arcade game built with HTML5 Canvas and vanilla JavaScript featuring custom gravity kinematics, collision detection, and persistent high scores via localStorage.",
+        techStack: ["HTML", "CSS", "JavaScript"],
+        featured: false,
+        links: {
+            github: "https://github.com/justinr25/flappy-circle",
+            live: "https://justinr25.github.io/flappy-circle/",
+        },
+    },
+    {
+        id: "pygame-flappy-bird",
+        name: "Pygame Flappy Bird",
+        description:
+            "A modular object-oriented 2D desktop game in Python using Pygame, featuring dynamic collision detection, responsive fullscreen scaling, and persistent high scores.",
+        techStack: ["Python", "Pygame"],
+        featured: false,
+        links: {
+            github: "https://github.com/justinr25/pygame-flappy-bird",
+        },
+    },
+    {
+        id: "todo-list",
+        name: "Todo List",
+        description:
+            "A responsive task management web application with priority tagging, due date scheduling, active filter controls, and persistent browser storage synchronization.",
+        techStack: ["HTML", "CSS", "JavaScript"],
+        featured: false,
+        links: {
+            github: "https://github.com/justinr25/todo-list",
+            live: "https://justinr25.github.io/todo-list/",
         },
     },
 ];

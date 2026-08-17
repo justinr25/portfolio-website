@@ -52,6 +52,7 @@ describe("portfolio data integrity", () => {
         expect(project.name).toBeTruthy();
         expect(project.description).toBeTruthy();
         expect(project.techStack.length).toBeGreaterThan(0);
+        expect(typeof project.featured).toBe("boolean");
       });
     });
 

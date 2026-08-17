@@ -1,9 +1,9 @@
 import { GitHubIcon, LinkedInIcon } from "@/components/icons/BrandIcons";
 
-export function Footer() {
+export function Footer({ maxWidth = "max-w-4xl" }: { maxWidth?: string }) {
     return (
         <footer className="border-t border-surface/60 py-8">
-            <div className="mx-auto flex max-w-4xl justify-between gap-4 px-6">
+            <div className={`mx-auto flex ${maxWidth} justify-between gap-4 px-6`}>
                 <p className="font-mono text-xs text-overlay">
                     © {new Date().getFullYear()} Justin Rosales
                 </p>
